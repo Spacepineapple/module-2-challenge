@@ -60,9 +60,10 @@ li {
     border-color: var(--tertiary-colour);
     background-color: var(--tertiary-colour);
     height: 90%;
-    margin: 10px;
+    margin-right: 10px;
     display: flex;
     align-items: center;
+    border-radius: 10%;
 }
 
 nav a {
@@ -87,12 +88,14 @@ nav a {
 
 .content {
     grid-area: content;
+    margin-left: 20px;
 }
 
 .portrait {
     height: 100%;
     width: auto;
     margin-left: 10px;
+    border-radius: 50%;
 }
 
 #about {
