@@ -1,16 +1,26 @@
 :root {
-    --primary-colour: none;
-    --secondary-colour: none;
-    --tertiary-colour: none;
+    --primary-colour: #FFEFD6;
+    --secondary-colour: #3A8891;
+    --tertiary-colour: #0E5E6F;
+    --quarternary-colour: #F2DEBA;
 }
 
 article {
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-areas:
         "about"
         "portfolio"
         "contact";
+}
+
+.content-section {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        "title" "content";
 }
 
 #about {
