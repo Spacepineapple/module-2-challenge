@@ -3,3 +3,25 @@
     --secondary-colour: none;
     --tertiary-colour: none;
 }
+
+article {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas:
+        "about"
+        "portfolio"
+        "contact";
+}
+
+#about {
+    grid-area: about;
+}
+
+#portfolio {
+    grid-area: portfolio;
+}
+
+#contact {
+    grid-area: contact;
+}
+
