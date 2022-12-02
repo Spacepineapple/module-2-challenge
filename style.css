@@ -23,6 +23,14 @@ article {
         "title" "content";
 }
 
+.title {
+    grid-area: title;
+}
+
+.content {
+    grid-area: content;
+}
+
 #about {
     grid-area: about;
 }
