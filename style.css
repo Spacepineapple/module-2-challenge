@@ -52,6 +52,7 @@ nav ul{
     justify-content: space-evenly;
     margin-left: auto;
     list-style-type: none;
+    height: 66%;
 }
 
 li {
@@ -60,6 +61,8 @@ li {
     background-color: var(--tertiary-colour);
     height: 90%;
     margin: 10px;
+    display: flex;
+    align-items: center;
 }
 
 nav a {
@@ -132,4 +135,9 @@ nav a {
 
 #project-five {
     grid-area: projectFive;
+}
+
+.project-image {
+    height: 100%;
+    width: 100%;
 }
