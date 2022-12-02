@@ -29,6 +29,11 @@ footer {
     text-align: center;
 }
 
+h1 {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 h2 {
     color: var(--tertiary-colour);
 }
@@ -36,13 +41,30 @@ h2 {
 
 nav {
     background-color: var(--secondary-colour);
-    margin-top: 0;
-    margin-bottom: 0;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 nav ul{
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-evenly;
+    margin-left: auto;
+    list-style-type: none;
+}
+
+li {
+    border-style: solid;
+    border-color: var(--tertiary-colour);
+    background-color: var(--tertiary-colour);
+    height: 90%;
+    margin: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--quarternary-colour);
 }
 
 .content-section {
@@ -62,6 +84,12 @@ nav ul{
 
 .content {
     grid-area: content;
+}
+
+.portrait {
+    height: 100%;
+    width: auto;
+    margin-left: 10px;
 }
 
 #about {
