@@ -40,7 +40,6 @@ h2 {
     color: var(--tertiary-colour);
 }
 
-
 nav {
     background-color: var(--secondary-colour);
     height: 100px;
@@ -145,4 +144,9 @@ nav a {
 .project-image {
     height: 100%;
     width: 100%;
+}
+
+.social-media-icon {
+    height: 1rem;
+    width: 1rem;
 }
