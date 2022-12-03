@@ -138,6 +138,22 @@ a {
     border-radius: 50%;
 }
 
+.skills {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-icon {
+    height: 3rem;
+    width: 3rem;
+    filter: invert(42%) sepia(91%) saturate(1911%) hue-rotate(151deg) brightness(98%) contrast(101%);
+}
+
 #about {
     grid-area: about;
 }
