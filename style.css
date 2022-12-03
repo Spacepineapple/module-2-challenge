@@ -12,10 +12,11 @@
 
 article {
     display: grid;
-    grid-template-rows: 25% 50% 25%;
+    grid-template-rows: 10% 30% 50% 10%;
     grid-template-columns: 1fr;
     grid-template-areas:
         "about"
+        "skills"
         "portfolio"
         "contact";
     background-color: var(--primary-colour);
@@ -114,6 +115,10 @@ a {
     grid-area: about;
 }
 
+#skills {
+    grid-area: skills;
+}
+
 #portfolio {
     grid-area: portfolio;
 }
@@ -185,22 +190,32 @@ a {
     border-color: red;
 }
 
-#portfolio-link:hover {
-    border-color: orange;
-}
-
-#contact-link:hover {
-    border-color: yellow;
-}
-
 #about-link a:hover {
     color: red;
 }
 
+#skills-link:hover {
+    border-color: yellow;
+}
+
+#skills-link a:hover {
+    color: yellow;
+}
+
+#portfolio-link:hover {
+    border-color: greenyellow;
+}
+
 #portfolio-link a:hover {
-    color: orange;
+    color: greenyellow;
+}
+
+#contact-link:hover {
+    border-color: aqua;
 }
 
 #contact-link a:hover {
-    color: yellow;
+    color: aqua;
 }
+
+
