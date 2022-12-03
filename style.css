@@ -1,23 +1,27 @@
 :root {
+    /*
     --primary-colour: #B1D0E0;
     --secondary-colour: black;
-    /*
     --secondary-colour: #406882;
-    */
     --tertiary-colour: #1A374D;
     --quarternary-colour: #6998AB;
+    */
+    --primary-colour: #1687A7;
+    --secondary-colour: #276678;
+    --tertiary-colour: #D3E0EA;
+    --quarternary-colour: #F6F5F5;
     --text-colour: #99FFFF;
-    
 }
 
 article {
     display: grid;
-    grid-template-rows: 10% 30% 50% 10%;
+    grid-template-rows: 10% 20% 50% 10% 10%;
     grid-template-columns: 1fr;
     grid-template-areas:
         "about"
         "skills"
         "portfolio"
+        "research"
         "contact";
     background-color: var(--primary-colour);
     margin-top: 0;
@@ -33,18 +37,20 @@ body {
 
 footer {
     background-color: var(--secondary-colour);
-    color: var(--primary-colour);
+    color: var(--quarternary-colour);
     text-align: center;
 }
 
 h1 {
     margin-left: 10px;
     margin-right: 10px;
-    color: #d1e6e3;
+    color: var(--quarternary-colour);
+    font-family: "Cinzel Decorative"; 
+    font-weight: 900;
 }
 
 h2 {
-    color: var(--tertiary-colour);
+    color: var(--quarternary-colour);
     margin-right: 2rem;
 }
 
@@ -67,8 +73,9 @@ nav ul{
 
 nav li {
     border-style: solid;
-    border-color: white;
-    background-color: black;
+    border-width: 2px;
+    border-color: var(--quarternary-colour);
+    background-color: var(--secondary-colour);
     height: 2rem;
     margin-right: 10px;
     display: flex;
@@ -78,7 +85,7 @@ nav li {
 
 a {
     text-decoration: none;
-    color: white;
+    color: var(--quarternary-colour);
 }
 
 .content-section {
@@ -121,6 +128,10 @@ a {
 
 #portfolio {
     grid-area: portfolio;
+}
+
+#research {
+    grid-area: research;
 }
 
 #contact {
@@ -173,49 +184,18 @@ a {
     justify-content: space-between;
 }
 
-.contact a {
-    color: black;
-}
-
 .section-link {
     appearance: button;
 }
 
 .section-link:hover {
-    box-shadow: 0 0.5em 0.5em -0.4em var(--quarternary-colour);
+    box-shadow: 0 0.5em 0.5em -0.4em var(--tertiary-colour);
     transform: translateY(-0.3em);
+    border-width: 1.5px;
+    color: var(--quarternary-colour);
 }
 
-#about-link:hover {
-    border-color: red;
+li {
+    color: var(--quarternary-colour);
 }
-
-#about-link a:hover {
-    color: red;
-}
-
-#skills-link:hover {
-    border-color: yellow;
-}
-
-#skills-link a:hover {
-    color: yellow;
-}
-
-#portfolio-link:hover {
-    border-color: greenyellow;
-}
-
-#portfolio-link a:hover {
-    color: greenyellow;
-}
-
-#contact-link:hover {
-    border-color: aqua;
-}
-
-#contact-link a:hover {
-    color: aqua;
-}
-
 
