@@ -23,6 +23,7 @@ body {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
+    font-family: "Helvetica", "Roboto", "Open Sans", sans-serif;
 }
 
 footer {
@@ -56,7 +57,7 @@ nav ul{
     height: 66%;
 }
 
-li {
+nav li {
     border-style: solid;
     border-color: var(--tertiary-colour);
     background-color: var(--tertiary-colour);
@@ -67,7 +68,7 @@ li {
     border-radius: 10%;
 }
 
-nav a {
+a {
     text-decoration: none;
     color: var(--text-colour);
 }
@@ -90,6 +91,7 @@ nav a {
 .content {
     grid-area: content;
     margin-left: 20px;
+    font-family: "Roboto", "Open Sans", sans-serif;
 }
 
 .portrait {
@@ -149,4 +151,10 @@ nav a {
 .social-media-icon {
     height: 1rem;
     width: 1rem;
+    margin-right: 5px;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
 }
