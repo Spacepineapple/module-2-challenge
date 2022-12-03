@@ -3,6 +3,8 @@
     --secondary-colour: #406882;
     --tertiary-colour: #1A374D;
     --quarternary-colour: #6998AB;
+    --text-colour: #99FFFF;
+    
 }
 
 article {
@@ -68,7 +70,7 @@ li {
 
 nav a {
     text-decoration: none;
-    color: var(--quarternary-colour);
+    color: var(--text-colour);
 }
 
 .content-section {
