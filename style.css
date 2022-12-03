@@ -1,6 +1,9 @@
 :root {
     --primary-colour: #B1D0E0;
+    --secondary-colour: black;
+    /*
     --secondary-colour: #406882;
+    */
     --tertiary-colour: #1A374D;
     --quarternary-colour: #6998AB;
     --text-colour: #99FFFF;
@@ -24,6 +27,7 @@ body {
     justify-content: flex-start;
     flex-direction: column;
     font-family: "Helvetica", "Roboto", "Open Sans", sans-serif;
+    margin: 0 0 0 0;
 }
 
 footer {
@@ -35,10 +39,12 @@ footer {
 h1 {
     margin-left: 10px;
     margin-right: 10px;
+    color: #d1e6e3;
 }
 
 h2 {
     color: var(--tertiary-colour);
+    margin-right: 2rem;
 }
 
 nav {
@@ -55,13 +61,14 @@ nav ul{
     margin-left: auto;
     list-style-type: none;
     height: 66%;
+    align-items: center;
 }
 
 nav li {
     border-style: solid;
-    border-color: var(--tertiary-colour);
-    background-color: var(--tertiary-colour);
-    height: 90%;
+    border-color: white;
+    background-color: black;
+    height: 2rem;
     margin-right: 10px;
     display: flex;
     align-items: center;
@@ -70,7 +77,7 @@ nav li {
 
 a {
     text-decoration: none;
-    color: var(--text-colour);
+    color: white;
 }
 
 .content-section {
@@ -86,12 +93,14 @@ a {
     border-right: 3px solid var(--tertiary-colour);
     margin-top: 5px;
     margin-bottom: 5px;
+    text-align: right;
 }
 
 .content {
     grid-area: content;
     margin-left: 20px;
     font-family: "Roboto", "Open Sans", sans-serif;
+    margin-right: 2rem;
 }
 
 .portrait {
@@ -157,4 +166,41 @@ a {
 .contact {
     display: flex;
     justify-content: space-between;
+}
+
+.contact a {
+    color: black;
+}
+
+.section-link {
+    appearance: button;
+}
+
+.section-link:hover {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--quarternary-colour);
+    transform: translateY(-0.3em);
+}
+
+#about-link:hover {
+    border-color: red;
+}
+
+#portfolio-link:hover {
+    border-color: orange;
+}
+
+#contact-link:hover {
+    border-color: yellow;
+}
+
+#about-link a:hover {
+    color: red;
+}
+
+#portfolio-link a:hover {
+    color: orange;
+}
+
+#contact-link a:hover {
+    color: yellow;
 }
