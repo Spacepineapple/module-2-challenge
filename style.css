@@ -32,6 +32,17 @@
 }
 */
 
+article {
+    background-color: var(--quarternary-colour);
+}
+
+/*
+section {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+*/
+
 section:nth-child(odd) {
     background-color: var(--secondary-colour);
 }
@@ -78,29 +89,34 @@ footer {
 h1 {
     margin-left: 10px;
     margin-right: 10px;
-    color: var(--tertiary-colour);
-    font-family: "Cinzel Decorative"; 
-    font-weight: 900;
+    color: var(--primary-colour);
+    font-family: "Cinzel"; 
+    font-weight: 500;
+    align-self: flex-end;
+    height: 3rem;
+    width: auto;
 }
 
 h2 {
     color: var(--tertiary-colour);
-    margin-right: 2rem;
 }
 
 nav {
     background-color: var(--quarternary-colour);
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 nav ul{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     list-style-type: none;
     height: 66%;
     align-items: center;
+    width: 100%;
+    margin-left: 21.275rem;
+    padding: 0;
 }
 
 nav li {
@@ -142,7 +158,16 @@ ul {
     grid-area: title;
     margin-top: 5px;
     margin-bottom: 5px;
-    text-align: right;
+    margin-left:21.875rem;
+    margin-right: 5.625rem;
+    width: 7.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.title, .content {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 #skills-title {
@@ -156,6 +181,10 @@ ul {
     margin-left: 20px;
     font-family: "Roboto", "Open Sans", sans-serif;
     margin-right: 2rem;
+    color: var(--quarternary-colour);
+    margin-right: 21.875rem;
+    margin-left: 5.625rem;
+    width: 61.25rem;
 }
 
 /*
@@ -178,11 +207,15 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 30%;
+    height: auto;
 }
 
 .skills p {
-    color: var(--tertiary-colour);
+    color: var(--quarternary-colour);
+    width: 75%;
 }
+
 
 .skill-icon {
     height: 3rem;
@@ -218,31 +251,45 @@ ul {
         "projectOne projectOne"
         "projectTwo projectThree"
         "projectFour projectFive";
+    height: 40rem;
 }
 
 #project-one {
     grid-area: projectOne;
+    background-image: url("./assets/Project.jpg");
 }
 
 #project-two {
     grid-area: projectTwo;
+    background-image: url("./assets/htmlCode.jpg");
 }
 
 #project-three {
     grid-area: projectThree;
+    background-image: url("./assets/javascriptCode.jpg");
 }
 
 #project-four {
     grid-area: projectFour;
+    background-image: url("./assets/phpCode.jpg");
 }
 
 #project-five {
     grid-area: projectFive;
+    background-image: url("./assets/codeText.jpg");
+}
+
+.project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem 1rem 1rem 1rem;
+    margin: 1rem 0.5rem 1rem 0.5rem;
 }
 
 .project-image {
-    height: 100%;
-    width: 100%;
+    height: 33%;
+    width: 33%;
 }
 
 .social-media-icon {
@@ -254,10 +301,7 @@ ul {
 .contact {
     display: flex;
     justify-content: space-around;
-}
-
-.section-link {
-    appearance: button;
+    padding-left: 0;
 }
 
 .section-link:hover {
@@ -279,7 +323,7 @@ li {
 }
 
 h3 {
-    color: var(--tertiary-colour);
+    color: var(--quarternary-colour);
 }
 
 h4 {
@@ -309,4 +353,8 @@ h5 {
 
 .portrait, #my-name, #my-description {
     margin: 0.5rem auto 0.5rem auto;
+}
+
+footer h3 {
+    color: var(--tertiary-colour);
 }
