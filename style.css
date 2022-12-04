@@ -32,9 +32,14 @@
 }
 */
 
+/*
+
 article {
     background-color: var(--quarternary-colour);
 }
+
+*/
+
 
 /*
 section {
@@ -43,6 +48,7 @@ section {
 }
 */
 
+/*
 section:nth-child(odd) {
     background-color: var(--secondary-colour);
 }
@@ -50,7 +56,7 @@ section:nth-child(odd) {
 section:nth-child(even) {
     background-color: var(--primary-colour);
 }
-
+*/
 
 article {
     display: grid;
@@ -81,9 +87,15 @@ body {
 }
 
 footer {
+    /*
     background-color: var(--quarternary-colour);
-    color: var(--tertiary-colour);
+    */
+    color: var(--quarternary-colour);
     text-align: center;
+}
+
+footer h3 {
+    color: var(--quarternary-colour);
 }
 
 h1 {
@@ -98,11 +110,14 @@ h1 {
 }
 
 h2 {
-    color: var(--tertiary-colour);
+    color: var(--primary-colour);
+}
+
+nav, footer {
+    background-color: var(--primary-colour);
 }
 
 nav {
-    background-color: var(--quarternary-colour);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -121,7 +136,7 @@ nav ul{
 
 nav li {
     border-width: 2px;
-    border-color: var(--primary-colour);
+    border-color: var(--quarternary-colour);
     height: 2rem;
     margin-right: 10px;
     display: flex;
@@ -131,7 +146,7 @@ nav li {
 
 a {
     text-decoration: none;
-    color: var(--secondary-colour);
+    color: var(--quarternary-colour);
 }
 
 ul {
@@ -181,7 +196,7 @@ ul {
     margin-left: 20px;
     font-family: "Roboto", "Open Sans", sans-serif;
     margin-right: 2rem;
-    color: var(--quarternary-colour);
+    color: var(--secondary-colour);
     margin-right: 21.875rem;
     margin-left: 5.625rem;
     width: 61.25rem;
@@ -212,7 +227,6 @@ ul {
 }
 
 .skills p {
-    color: var(--quarternary-colour);
     width: 75%;
 }
 
@@ -312,7 +326,7 @@ ul {
 }
 
 li {
-    color: var(--quarternary-colour);
+    color: var(--secondary-colour);
 }
 
 #about-content {
@@ -323,7 +337,7 @@ li {
 }
 
 h3 {
-    color: var(--quarternary-colour);
+    color: var(--primary-colour);
 }
 
 h4 {
@@ -340,7 +354,7 @@ h5 {
 }
 
 #contact a {
-    color: var(--tertiary-colour);
+    color: var(--secondary-colour);
 }
 
 #about-title {
@@ -355,6 +369,6 @@ h5 {
     margin: 0.5rem auto 0.5rem auto;
 }
 
-footer h3 {
-    color: var(--tertiary-colour);
+.social-media-icon {
+    filter: invert(42%) sepia(91%) saturate(1911%) hue-rotate(151deg) brightness(98%) contrast(101%);
 }
