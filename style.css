@@ -262,3 +262,7 @@ h5 {
 #skills-content {
     text-align: center;
 }
+
+#contact a {
+    color: var(--tertiary-colour);
+}
