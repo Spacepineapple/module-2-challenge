@@ -118,6 +118,10 @@ a {
     color: var(--secondary-colour);
 }
 
+ul {
+    list-style-type: none;
+}
+
 .content-section {
     display: grid;
     grid-template-columns: 0.5fr 3fr;
@@ -249,7 +253,7 @@ a {
 
 .contact {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .section-link {
