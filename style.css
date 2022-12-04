@@ -59,18 +59,9 @@ section:nth-child(even) {
 */
 
 article {
-    display: grid;
-    grid-template-rows: 10% 10% 50% 20% 10%;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-        "about"
-        "skills"
-        "portfolio"
-        "research"
-        "contact";
-    /*
-    background-color: var(--primary-colour);
-    */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 0;
 }
 
@@ -153,6 +144,7 @@ ul {
     list-style-type: none;
 }
 
+/*
 .content-section {
     display: grid;
     grid-template-columns: 0.5fr 3fr;
@@ -160,6 +152,9 @@ ul {
     grid-template-areas: 
         "title content";
 }
+*/
+
+
 
 .about-text {
     display: flex;
@@ -170,10 +165,12 @@ ul {
 }
 
 .title {
+    /*
     grid-area: title;
+    */
     margin-top: 5px;
     margin-bottom: 5px;
-    margin-left:21.875rem;
+    margin-left: 10%;
     margin-right: 5.625rem;
     width: 7.5rem;
     display: flex;
@@ -192,14 +189,22 @@ ul {
 }
 
 .content {
+    /*
     grid-area: content;
+    */
     margin-left: 20px;
     font-family: "Roboto", "Open Sans", sans-serif;
     margin-right: 2rem;
     color: var(--secondary-colour);
     margin-right: 21.875rem;
     margin-left: 5.625rem;
-    width: 61.25rem;
+    width: 90%;
+}
+
+section {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 /*
@@ -238,12 +243,21 @@ ul {
 }
 
 #about {
+    /*
     grid-area: about;
+    */
+    display: grid;
+    grid-template-columns: 0.5fr 3fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        "title content";
 }
 
+/*
 #skills {
     grid-area: skills;
 }
+
 
 #portfolio {
     grid-area: portfolio;
@@ -256,8 +270,9 @@ ul {
 #contact {
     grid-area: contact;
 }
+*/
 
-#portfolio-content {
+#portfolio-container {
     display: grid;
     grid-template-rows: 2fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
@@ -265,7 +280,9 @@ ul {
         "projectOne projectOne"
         "projectTwo projectThree"
         "projectFour projectFive";
-    height: 40rem;
+    height: 35rem;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 #project-one {
@@ -298,7 +315,8 @@ ul {
     justify-content: center;
     align-items: center;
     border-radius: 1rem 1rem 1rem 1rem;
-    margin: 1rem 0.5rem 1rem 0.5rem;
+    margin: 2% 2% 2% 2%;
+    width: 80%;
 }
 
 .project-image {
@@ -349,10 +367,6 @@ h5 {
     color: var(--tertiary-colour);
 }
 
-#skills-content {
-    text-align: center;
-}
-
 #contact a {
     color: var(--secondary-colour);
 }
@@ -372,3 +386,4 @@ h5 {
 .social-media-icon {
     filter: invert(42%) sepia(91%) saturate(1911%) hue-rotate(151deg) brightness(98%) contrast(101%);
 }
+
