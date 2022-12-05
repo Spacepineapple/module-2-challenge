@@ -338,7 +338,7 @@ h5 {
     text-align: center;
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 800px) {
     .content {
         display: flex;
         flex-direction: column;
@@ -357,4 +357,8 @@ h5 {
         width: 50%;
         padding: 0;    
     }
+}
+
+#contact-text p {
+    text-align: center;
 }
