@@ -59,16 +59,28 @@ section:nth-child(even) {
 */
 
 article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-rows: 0.1fr 0.1fr 5fr 0.1fr 0.1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "about"
+        "skills"
+        "portfolio"
+        "research"
+        "contact";
+    /*
+    background-color: var(--primary-colour);
+    */
     margin-top: 0;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
-/*
-
-*/
-
+#skills-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 body {
     display: flex;
     justify-content: flex-start;
@@ -96,7 +108,6 @@ h1 {
     font-family: "Cinzel"; 
     font-weight: 500;
     align-self: flex-end;
-    height: 3rem;
     width: auto;
 }
 
@@ -121,7 +132,7 @@ nav ul{
     height: 66%;
     align-items: center;
     width: 100%;
-    margin-left: 21.275rem;
+    margin-left: 10%;
     padding: 0;
 }
 
@@ -144,7 +155,6 @@ ul {
     list-style-type: none;
 }
 
-/*
 .content-section {
     display: grid;
     grid-template-columns: 0.5fr 3fr;
@@ -152,9 +162,6 @@ ul {
     grid-template-areas: 
         "title content";
 }
-*/
-
-
 
 .about-text {
     display: flex;
@@ -165,22 +172,22 @@ ul {
 }
 
 .title {
-    /*
     grid-area: title;
-    */
     margin-top: 5px;
     margin-bottom: 5px;
-    margin-left: 10%;
-    margin-right: 5.625rem;
-    width: 7.5rem;
+    margin-left:10%;
+    margin-right: 5%;
+    width: 20%;
     display: flex;
     justify-content: center;
 }
 
+/*
+
 .title, .content {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
 }
+
+*/
 
 #skills-title {
     display: flex;
@@ -189,22 +196,11 @@ ul {
 }
 
 .content {
-    /*
     grid-area: content;
-    */
     margin-left: 20px;
     font-family: "Roboto", "Open Sans", sans-serif;
     margin-right: 2rem;
     color: var(--secondary-colour);
-    margin-right: 21.875rem;
-    margin-left: 5.625rem;
-    width: 90%;
-}
-
-section {
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
 }
 
 /*
@@ -237,27 +233,27 @@ section {
 
 
 .skill-icon {
-    height: 3rem;
-    width: 3rem;
+    max-height: 10vh;
+    width: auto;
     filter: invert(42%) sepia(91%) saturate(1911%) hue-rotate(151deg) brightness(98%) contrast(101%);
 }
 
-#about {
-    /*
-    grid-area: about;
-    */
-    display: grid;
-    grid-template-columns: 0.5fr 3fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: 
-        "title content";
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 75%;
+    align-self: flex-start;
 }
 
-/*
+#about {
+    grid-area: about;
+}
+
 #skills {
     grid-area: skills;
 }
-
 
 #portfolio {
     grid-area: portfolio;
@@ -269,10 +265,10 @@ section {
 
 #contact {
     grid-area: contact;
+    height: 10%;
 }
-*/
 
-#portfolio-container {
+#portfolio-content {
     display: grid;
     grid-template-rows: 2fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
@@ -280,9 +276,6 @@ section {
         "projectOne projectOne"
         "projectTwo projectThree"
         "projectFour projectFive";
-    height: 35rem;
-    margin-left: 10%;
-    margin-right: 10%;
 }
 
 #project-one {
@@ -315,8 +308,7 @@ section {
     justify-content: center;
     align-items: center;
     border-radius: 1rem 1rem 1rem 1rem;
-    margin: 2% 2% 2% 2%;
-    width: 80%;
+    margin: 1rem 0.5rem 1rem 0.5rem;
 }
 
 .project-image {
@@ -349,9 +341,7 @@ li {
 
 #about-content {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    height: 15rem;
 }
 
 h3 {
@@ -367,12 +357,15 @@ h5 {
     color: var(--tertiary-colour);
 }
 
+#skills-content {
+    text-align: center;
+}
+
 #contact a {
     color: var(--secondary-colour);
 }
 
 #about-title {
-    height: 15.625rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -386,4 +379,3 @@ h5 {
 .social-media-icon {
     filter: invert(42%) sepia(91%) saturate(1911%) hue-rotate(151deg) brightness(98%) contrast(101%);
 }
-
