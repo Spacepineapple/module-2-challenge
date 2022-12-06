@@ -10,7 +10,7 @@
 ## URL <a id="url"></a>
 
 A live version of this page has been deployed at
-https://spacepineapple.github.io/module-2-challenge/ .
+https://spacepineapple.github.io/personal-portfolio/ .
 
 ## Description <a id="description"></a>
 
