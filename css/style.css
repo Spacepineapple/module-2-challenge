@@ -209,27 +209,27 @@ ul {
 
 #project-one {
     grid-area: projectOne;
-    background-image: url("../assets/Project.jpg");
+    background-image: url("./assets/Project.jpg");
 }
 
 #project-two {
     grid-area: projectTwo;
-    background-image: url("../assets/htmlCode.jpg");
+    background-image: url("./assets/htmlCode.jpg");
 }
 
 #project-three {
     grid-area: projectThree;
-    background-image: url("../assets/javascriptCode.jpg");
+    background-image: url("./assets/javascriptCode.jpg");
 }
 
 #project-four {
     grid-area: projectFour;
-    background-image: url("../assets/phpCode.jpg");
+    background-image: url("./assets/phpCode.jpg");
 }
 
 #project-five {
     grid-area: projectFive;
-    background-image: url("../assets/codeText.jpg");
+    background-image: url("./assets/codeText.jpg");
 }
 
 .project {
